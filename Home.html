@@ -8,15 +8,29 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="infoContainer">
-    </div>
-    <div id="mainContainer">
-        <form id="inputText">
-            <input id="inputID" maxlength=30 type="text" required>
-            <input id="inputPW" maxlength=30 type="text" required>
-            <button>login</button>
-        </form>
+    <div id="mainPage">
+        <div id="infoContainer">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="mainContainer">
+            <div>
+                <form id="inputText">
+                    <div id="login">
+                        <a>ID <input id="inputID" maxlength=30 type="text" required></a>
+                        <a>PW <input id="inputPW" maxlength=30 type="text" required></a>
+                        <button>login</button>
+                    </div>
+                </form>
+            </div>
+            <div id="quoteBox">
+                <p></p>
+                <p></p>
+            </div>
+        </div>
     </div>
     <script src="JS/clock.js"></script>
+    <script src="JS/weather.js"></script>
+    <script src="JS/quotes.js"></script>
 </body>
 </html>

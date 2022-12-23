@@ -1,4 +1,59 @@
 * {
     text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
 }
+#infoContainer {
+    padding: 20px, 20px;
+    text-align: right;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+}
+
+#mainContainer {
+    width: auto;
+    height: 600px;
+    vertical-align: middle; /* vertical-align 에 영향을 받는 것은 inline-block 요소들*/
+    text-align: center;
+}
+
+#inputText {
+    display: inline-block;
+    width: 40%;
+    height: 50px;
+}
+
+div #login{
+    width: 120px;
+    height:0px;
+}
+
+#inputText input {
+    width: 200px;
+    height: 20px;
+}
+
+#inputText button {
+    width: 40px;
+    height: 40px;
+}
+#quoteBox {
+    display: inline-block;
+}
+
+#quoteBox p:first-child {
+
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 30;
+}
+
+#quoteBox p:last-child {
+    width: auto;
+    font-size: 15px;
+    color: gray;
+    opacity: 30;
+}
+
+
