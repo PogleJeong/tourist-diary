@@ -14,7 +14,7 @@ const quoteList = {
 }
 
 const randomQuote = Math.floor(Math.random()*5);
-const inputQuote = document.querySelector("#mainContainer p:first-child");
-const inputAuthor = document.querySelector("#mainContainer p:last-child");
+const inputQuote = document.querySelector("#quoteBox p:first-child");
+const inputAuthor = document.querySelector("#quoteBox p:last-child");
 inputQuote.innerText = quoteList.quote[randomQuote];
 inputAuthor.innerText = quoteList.author[randomQuote];
