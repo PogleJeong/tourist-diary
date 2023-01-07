@@ -17,7 +17,7 @@ function onGeoOk(position) { // geolocation object 이용
             console.log(data); // 요소 확인
             const city = document.querySelector("#infoContainer span:nth-child(1)");
             const weather = document.querySelector("#infoContainer span:nth-child(2)");
-            weather.innerText = `${data.weather[0].main} / ${kelvinToCelsius(data.main.temp)}℃`;
+            weather.innerText = `| 날씨 : ${data.weather[0].main} | 온도 : ${kelvinToCelsius(data.main.temp)}℃`;
             city.innerText = `${data.sys.country} - ${data.name}`;
         });
 }

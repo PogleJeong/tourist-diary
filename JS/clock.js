@@ -8,7 +8,7 @@ function getClock () { // ctrl+shift+L 한번에 변수 바꾸기
     const currentMinute = String(date.getMinutes()).padStart(2,"0");
     const currentSecond = String(date.getSeconds()).padStart(2,"0");
    
-    clock.innerText = `${currentHour}:${currentMinute}:${currentSecond}`;
+    clock.innerText = `현재 시각 : ${currentHour}:${currentMinute}:${currentSecond}`;
 }
 
 getClock();
