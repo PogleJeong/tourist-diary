@@ -1,5 +1,11 @@
 const API_KEY = "8cf6d085728f3abc26b34c18a83e6817"
-
+const translateWeather = {
+    'Haze':'안개낌',
+    'rain':'비',
+    'clear':'맑음',
+    'cloudy': '흐림',
+    'snow':"눈"
+}
 function kelvinToCelsius(kelvin) {
     let celsius = kelvin-273.15;
     celsius = celsius.toFixed(2);
@@ -15,9 +21,9 @@ function onGeoOk(position) { // geolocation object 이용
     .then(Response => Response.json())
     .then(data => {
             console.log(data); // 요소 확인
-            const city = document.querySelector("#infoContainer span:nth-child(1)");
-            const weather = document.querySelector("#infoContainer span:nth-child(2)");
-            weather.innerText = `| 날씨 : ${data.weather[0].main} | 온도 : ${kelvinToCelsius(data.main.temp)}℃`;
+            const city = document.querySelector("#info-Container span:nth-child(1)");
+            const weather = document.querySelector("#info-Container span:nth-child(2)");
+            weather.innerText = `| 날씨 : ${translateWeather[data.weather[0].main]} | 온도 : ${kelvinToCelsius(data.main.temp)}℃`;
             city.innerText = `${data.sys.country} - ${data.name}`;
         });
 }

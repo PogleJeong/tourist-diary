@@ -12,27 +12,30 @@
 </head>
 <body>
     <div id="mainPage">
-        <div>
-            <div id="infoContainer">
+        <div id="entire-Box">
+            <div id="info-Container">
                 <span></span>
                 <span></span>
             </div>
-            <div id="mainContainer">
-                <div id="sign-in-container">
+            <div id="main-Container">
+                <div class="sign-in-container">
                     <form id="inputText">
                         <span>Hello!! Traveler!</span>
-                        <input id="inputID" placeholder="Enter your ID" required></p>
-                        <input id="inputPW" placeholder="Enter your Password" required></p>
-                        <button>SIGN UP</button>
+                        <input id="inputID" placeholder="Enter your ID" required>
+                        <input id="inputPW" placeholder="Enter your Password" required>
+                        <p><a href="#">Forgot your password?</a></p>
+                        <button type="button">SIGN IN</button>
                     </form>
                 </div>
-                <div id="sign-up-container">
+                <div class="sign-up-container">
                     <form id="sign-up">
                         <p>Welecome to Pogle's traveler site</p>
                         <p>If you haven't account, you can create account here</p>
-                        <button>SIGN IN</button>
+                        <button type="button">SIGN UP</button>
                     </form>
                 </div>
+            </div>
+            <div id="overlay-Container">
             </div>
         </div>
         <div id="quoteBox">
@@ -44,5 +47,6 @@
         <script src="JS/weather.js"></script>
         <script src="JS/quotes.js"></script>
         <script src="JS/login.js"></script>
+        <script src="JS/photo.js"></script>
 </body>
 </html>

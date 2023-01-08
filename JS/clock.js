@@ -1,5 +1,5 @@
 let clock = document.createElement("p");
-const clockParent = document.getElementById("infoContainer");
+const clockParent = document.getElementById("info-Container");
 clockParent.appendChild(clock);
 
 function getClock () { // ctrl+shift+L 한번에 변수 바꾸기
