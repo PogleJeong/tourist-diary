@@ -159,3 +159,15 @@ button:active { /*버튼이 눌리면 | 스케일(규모)이 0.95로 변한다(t
 .invisible-container {
     display: none;
 }
+.overlay-Container {
+    display:flex;
+    width: 500px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: rgba(222, 222, 222, 0.644);
+    animation: fadein 1s;
+}
