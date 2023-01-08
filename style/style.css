@@ -1,5 +1,6 @@
 * {
     text-decoration: none;
+    list-style: none;
     font-family: 'Poppins', sans-serif;
 }
 body {
@@ -159,15 +160,47 @@ button:active { /*버튼이 눌리면 | 스케일(규모)이 0.95로 변한다(t
 .invisible-container {
     display: none;
 }
-.overlay-Container {
-    display:flex;
+.overlay-container {
+    display:inline-block;
+    text-align: center;
     width: 500px;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
+    height: 800px;
     border-radius: 30px;
     background-color: rgba(222, 222, 222, 0.644);
     animation: fadein 1s;
+}
+.overlay-container h2 {
+    line-height: 100px;
+    width: 100%;
+    
+}
+#todo-list li {
+    position: relative; /*버튼 위치 조정하기 위함.*/
+    width: 400px;
+    line-height: 40px;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(124, 184, 185, 0.644);
+}
+
+#todo-form input {
+    width: 400px;
+    height: 40px;
+    font-size: 15px;
+    padding-left:15px;
+    margin-bottom: 20px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(222,222,222);
+}
+
+#todo-list li button {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border-style: none;
+    background-color: rgb(124, 184, 185, 0.344); /* 배경과 같은 색*/
 }
