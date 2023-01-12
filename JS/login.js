@@ -22,4 +22,4 @@ function login(event) {
 }
 
 createAcc.addEventListener("click", openCreateAccount);
-enterAcc.addEventListener("click", login);
+enterAcc.addEventListener("submit", login);

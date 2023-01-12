@@ -7,15 +7,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
+    background-color: bisque;
 }
 
 #create-account-form {
-    border: 3px green solid;
+    border: 3px rgb(116, 186, 206, 0.5) solid;
     border-radius: 15px;
     text-align:center;
-    height: 400px;
+    height: 100%;
     width: 300px;
+    padding: 20px 20px;
+    background-color: white;
 }
 
 #create-account-form p:first-child {
@@ -36,6 +39,14 @@ body {
     height:25px;
     margin-bottom: 20px;
 }
+#create-account-form input {
+    width: 250x;
+    height: 35px;
+    padding-left: 15px;
+    background-color: rgb(227, 233, 182);
+    border-radius: 15px;
+    border-style: none;
+}
 
 #create-account-form button {
     width:100px;
@@ -46,8 +57,16 @@ body {
 #create-account-form button:hover {
     background-color: aquamarine;
     transform: 1s;
+    cursor: pointer;
 }
 #create-account-form button:active {
     background-color: antiquewhite;
-    transform: scale(0.9);
+    transition: ease-in-out .8s;
+}
+
+#notAcceptId {
+    font-size: 12px;
+    font-weight: 30px;
+    text-align: center;
+    color: red;
 }
